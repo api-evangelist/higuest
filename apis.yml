@@ -1,7 +1,28 @@
 aid: higuest
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/higuest.png
 name: HiGuest
-description: HiGuest is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  HiGuests (Hi Guests Vacation Homes Rental LLC, License 765614) is a Dubai-based short-term
+  rental property management company. It offers full-service management for vacation homes and
+  furnished apartments, listing owners' properties across 20+ booking channels (Airbnb,
+  Booking.com, Expedia, and others), and handling profile creation, dynamic pricing, booking and
+  guest communications, 24/7 guest support, check-in/check-out, housekeeping, and maintenance,
+  alongside transparent owner reporting. HiGuests markets a zero-commission subscription plan for
+  landlords and operates a guest-facing booking site. It is a hospitality services business, not
+  an API/developer platform; no public API, OpenAPI, SDK, or developer documentation surface was
+  found during enrichment. Surfaced as a 500 Global portfolio company and profiled in the API
+  Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/higuest/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +32,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Hospitality
+- Property Management
+- Short-Term Rental
+- Vacation Rental
+- Travel
+- Real Estate
+- Dubai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/higuest-domain-security.yml
+- type: LLMsTxt
+  url: llms/higuest-llms.txt
 - type: Website
   url: https://higuests.com
+- type: Blog
+  url: https://higuests.com/blog/
+- type: Login
+  url: https://higuests.com/login/
+- type: Support
+  url: https://higuests.com/contact-us/
+- type: HelpCenter
+  url: https://higuests.com/faq/
+- type: TermsOfService
+  url: https://higuests.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://higuests.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
